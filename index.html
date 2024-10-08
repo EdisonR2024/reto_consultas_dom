@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Atractiva</title>
+    <link rel="stylesheet" href="src/css/estilos.css">
+    
+    <!-- Se incluye el atributo defer en la llamada al script, para indicar al navegador que debe continuar procesando el HTML 
+    y construir el DOM sin esperar a que el script se descargue y ejecute. Esto significa que el script
+    se ejecutará solo después de que el documento HTML haya sido completamente cargado y analizado, 
+    lo que es crucial si el script necesita acceder a elementos del DOM -->
+
+    <!-- Se incluye esto porque estaba teniendo un problema al acceder con JS y el DOM a los elementos del HTML
+     dado que se imprimia null en la consola.-->
+
+     <!-- Otra solución es poner al final antes del body, la llamda al script  -->
+    <script src="src/js/script.js" defer></script> 
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Página de plantas</h1>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <div id="imagenes">
+            <div>
+                <img src="src/img/flor.jpeg" alt="Flor 1">
+                <h2>Título de la Tarjeta 1</h2>
+                <p>Descripción de la tarjeta 1.</p>
+            </div>
+            <div>
+                <img src="src/img/flor.jpeg" alt="Flor 2">
+                <h2>Título de la Tarjeta 2</h2>
+                <p>Descripción de la tarjeta 2.</p>
+            </div>
+            <div>
+                <img src="src/img/flor.jpeg" alt="Flor 3">
+                <h2>Título de la Tarjeta 3</h2>
+                <p>Descripción de la tarjeta 3.</p>
+            </div>
+        </div>
+        <div id="contenido">
+            <h2>Información Importante</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel purus sit amet nisl dignissim tempus
+                eu eu ex.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Página Atractiva. Todos los derechos reservados.</p>
+    </footer>
+
+    
+</body>
+
+</html>
